@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title></title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="src/styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script
+    src="https://kit.fontawesome.com/8ac3c5e81d.js"
+    crossorigin="anonymous"
+  ></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    created
+    <div class="container">
+      <div class="first-line">
+        <img class="main-result" src="images/sun-behind-large-cloud.png"  />
+        <ul class="temperature-humidity-result">
+           <li id="current-temperature">Temperature <span id="unit">16&#176</span> </li>
+    
+           <li id="current-humidity"> Humidity <span id="percentage"</li>
+           </ul>
+    <div class="search-box">
+        <form id="search-form">
+          <input type="search" placeholder="🔍 Enter a city" id = "search-city" style="width: 35%;" />
+          <input type="submit" 
+          value="Search">
+        </form>
+      </div>
+      <h1 class="chosen-city" id="current-city">Washington, DC</h1>
+      <h2 class="chosen-date" id="current-date">22nd September 2020</h2>
+    
+  
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <p class="card-day">Mon</p>
+            <img src="images/sun.png" class="card-img-center" />
+            <div class="card-body">
+              <p class="card-text">15&#176;</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <p class="card-day">Tue</p>
+            <img src="images/sun-behind-large-cloud.png" class="card-img-center" />
+            <div class="card-body">
+              <p class="card-text">15&#176;</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <p class="card-day">Wed</p>
+            <img src="images/sun.png" class="card-img-center" />
+            <div class="card-body">
+              <p class="card-text">15&#176;</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <p class="card-day">Thu</p>
+            <img src="images/sun.png" class="card-img-center" />
+            <div class="card-body">
+              <p class="card-text">15&#176;</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <p class="card-day">Fri</p>
+            <img src="images/sun-behind-large-cloud.png" class="card-img-center" />
+            <div class="card-body">
+              <p class="card-text">15&#176;</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <p class="card-day">Sat</p>
+            <img src="images/sun-behind-large-cloud.png" class="card-img-center" />
+            <div class="card-body">
+              <p class="card-text">15&#176;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
   </body>
 </html>

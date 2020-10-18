@@ -1,0 +1,135 @@
+.container {
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  width: 1080px;
+  margin: 0 auto;
+  display: block;
+}
+
+.first-line {
+  margin: 0 auto;
+}
+
+.main-result {
+  position: relative;
+  width: 240px;
+  top: 80px;
+  left: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: solid 4px #f68084;
+}
+
+ul {
+  width: 380px;
+  margin: 0;
+}
+
+li {
+  border: solid 2px #596aca;
+  width: 40;
+  margin: 0;
+  text-align: center;
+}
+#current-humidity,
+#current-temperature {
+  font-family: "Rubik", sans-serif;
+  font-weight: 900;
+  position: relative;
+  font-size: 20px;
+  top: 10px;
+  left: 310px;
+  color: #596aca;
+  padding: 2px;
+  list-style: none;
+  width: 50%;
+  margin: 0;
+}
+
+#current-humidity {
+  top: -80px;
+  width: 50%;
+}
+.chosen-city {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  position: relative;
+  left: 670px;
+  top: -150px;
+  color: #ca2acf;
+  padding: 5px;
+  width: 50%;
+  margin: 0px;
+  margin-bottom: 0;
+}
+
+.chosen-date {
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  left: 670px;
+  top: -130px;
+  font-size: 18px;
+  color: #c04811;
+  width: 50%;
+  margin: 0px;
+}
+
+.search-box {
+  position: relative;
+  top: -230px;
+  left: 570px;
+  border-radius: 30%;
+}
+.row {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700px;
+  padding: 0px;
+  bottom: 40px;
+}
+
+.col {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  max-height: 200px;
+  margin-bottom: 5px;
+}
+
+.card {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  border: 4px solid #f68084;
+}
+.card-day {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 3px;
+  margin-bottom: 3px;
+  padding: 5px;
+  color: #f68084;
+}
+
+.card-img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 50px;
+  size: 60px;
+  padding: 5px;
+}
+
+.card-text {
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #596aca;
+}
