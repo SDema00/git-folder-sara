@@ -133,3 +133,12 @@ li {
   text-align: center;
   color: #596aca;
 }
+
+.github {
+  font-size: 15px;
+  font-weight: lighter;
+  display: block;
+  text-align: center;
+  color: #ca2acf;
+  cursor: pointer;
+}
