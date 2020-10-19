@@ -20,29 +20,18 @@
 }
 
 ul {
-  width: 380px;
-  margin: 0;
+  list-style-type: none;
+  margin-left: 300px;
 }
 
 li {
-  border: solid 2px #596aca;
-  width: 40;
-  margin: 0;
-  text-align: center;
-}
-#current-humidity,
-#current-temperature {
+  position: relative;
   font-family: "Rubik", sans-serif;
   font-weight: 900;
-  position: relative;
   font-size: 20px;
-  top: 10px;
-  left: 310px;
   color: #596aca;
   padding: 2px;
-  list-style: none;
-  width: 50%;
-  margin: 0;
+  bottom: 40px;
 }
 
 #current-humidity {
