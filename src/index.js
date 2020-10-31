@@ -40,7 +40,7 @@ function search(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let currentCity = document.querySelector("#city-input");
+  let currentCity = document.querySelector("#search-city");
   search(currentCity.value);
 }
 
