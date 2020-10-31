@@ -33,14 +33,15 @@ function displayWeatherCondition(response) {
 
 function search(city) {
   let apiKey = "3cbe34899ba9cdaea2a1be7e83c6edee";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=metric`;
+   let currentCity = document.querySelector("#search-city").value;  
+   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
 
 function handleSubmit(event) {
   event.preventDefault();
- let currentCity = document.querySelector("#search-city").value;  
+
  search(currentCity.value)
 
 }
