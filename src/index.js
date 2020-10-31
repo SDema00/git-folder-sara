@@ -16,9 +16,8 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-currentDate.innerHTML = `${day}, ${hour}:${minutes}`;
+currentDate.innerHTML = `Last updated ${day}, ${hour}:${minutes}`;
 
-//2
 function displayWeatherCondition(response) {
   console.log(response);
   document.querySelector("#current-city").innerHTML = response.data.name;
