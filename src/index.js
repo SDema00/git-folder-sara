@@ -28,11 +28,13 @@ function displayWeatherCondition(response) {
     response.data.weather[0].main;
     let iconElement= document.querySelector("#icon");
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-    let currentCity = document.querySelector("current-city")
+    
+  
 }
 
 
-function search(city) {
+function search(currentCity) {
+  let currentCity = document.querySelector("current-city");
   let apiKey = "3cbe34899ba9cdaea2a1be7e83c6edee";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
