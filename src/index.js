@@ -32,9 +32,9 @@ function displayWeatherCondition(response) {
   
 }
 
+let currentCity = document.querySelector("current-city");
 
 function search(currentCity) {
-  let currentCity = document.querySelector("current-city");
   let apiKey = "3cbe34899ba9cdaea2a1be7e83c6edee";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${currentCity}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
