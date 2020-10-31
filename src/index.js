@@ -16,18 +16,18 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-currentDate.innerHTML = `Last updated ${day}, ${hour}:${minutes}`;
+currentDate.innerHTML = `Last updated: ${day}, ${hour}:${minutes}`;
 
 function displayWeatherCondition(response) {
-  console.log(response);
   document.querySelector("#current-city").innerHTML = response.data.name;
   document.querySelector("#current-temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+    response.data.main.temp);
   document.querySelector("#current-humidity").innerHTML =
     response.data.main.humidity;
     document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+    let iconElement= document.querySelector("#icon");
+    iconElement.setAttribute("src", `http://openweathermap.org/img/wn${response.data.weaterh[0].icon}@2x.png)
 }
 
 function inputCity(event) {
