@@ -15,9 +15,6 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-console.log(hour);
-console.log(minutes);
-console.log(day);
 
 currentDate.innerHTML = `${day}, ${hour}:${minutes}`;
 
@@ -30,6 +27,8 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#current-humidity").innerHTML =
     response.data.main.humidity;
+    document.querySelector("#description").innerHTML =
+    response.data.weather[0].main;
 }
 
 function inputCity(event) {
