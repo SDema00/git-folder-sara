@@ -1,10 +1,12 @@
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  display: block;
 }
 
 .container {
   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  width: 100%;
   margin: 0 auto;
   display: block;
 }
@@ -105,6 +107,7 @@ li {
 h3 {
   color: #596aca;
   font-size: 16px;
+  font-family: "Rubik", sans-serif;
 }
 
 .github {

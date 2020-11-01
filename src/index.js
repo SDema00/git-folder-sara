@@ -44,8 +44,8 @@ function displayWeatherCondition(response) {
     response.data.weather[0].main;
     let iconElement= document.querySelector("#icon");
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-    
-  
+    let windElement = document.querySelector("#wind");
+    windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function dispalyForecast(response) {
