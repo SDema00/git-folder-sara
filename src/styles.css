@@ -100,9 +100,11 @@ li {
   margin: 3px;
   margin-bottom: 3px;
   padding: 5px;
-  color: #596aca;
 }
 
+h3 {
+  color: #596aca;
+}
 .col-2 {
   border: 4px solid #f68084;
 }
